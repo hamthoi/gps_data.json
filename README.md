@@ -1,0 +1,7 @@
+The file in the "course" folder is the same as that in the "IoT for Beginners" course, it uses my azure maps account but group 9's storage account. Just download and open it up on a web browser, should work until our Azure accounts reach the end of our free trials.
+The other 3 files work in tandem, and their purpose is to circumnavigate issues with using Azure Functions and event trigger hubs, making Azure storage unusable.
+These files should be on the same folder on your computer for the sake of simplicity.
+Note, however, that you only need to download the html file, since the "app.py" file should already exist with a virtual environment on a folder called "gps-sensor". Run counterfit with the terminal, put in your gps data on counterfit and run the python file, that should create a new json file with your gps data on it.
+You can localhost that json file or put it on your own PUBLIC github repository, or put it anywhere on the web that makes it publically available. This is to avoid CORS issues (cross-origins resouce sharing).
+If you just wanna use a json file on your local machine, then you can only localhost your map, since most browsers won't allow you to do that. Localhost with "http-server" through your terminal if you have Node.js and npm installed.
+This is a bit obvious but remember to change the URL in the "fetch" line to whatever URL you decide to use to retrieve your data.
